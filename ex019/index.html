@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapiscom/css2?family=work+sans:ital,wght@0100;0,200;0,300;0,400;0,500;0,600;1,700;1,800;1,900&display=swap');
+
+        body{
+            font-family: 'Work Sans', arial, helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, 
+            pt, pc -> não recomendadas para impressão em tela   
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente = 1em
+            Melhor talvez usar em para se adptar as telas e tamanhos
+            */
+            font-size: 1.5em;
+            /*
+            lighter normal bold bolder 
+            Peso da fonte
+            */ 
+        }
+
+        h1{
+            /* 
+            Shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: 'work sans'; 
+            */
+            font: italic bolder 3em 'Work Sans', sans-serif;    
+        }
+
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestiae consequuntur repellendus distinctio consequatur ex! Explicabo, voluptas! Recusandae ipsam provident vitae assumenda et, dicta, sint deserunt error itaque rerum magni. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et labore eius repellat accusantium esse porro eaque, ducimus doloremque dolorem obcaecati doloribus inventore praesentium tempore soluta dolores laudantium repellendus cumque eveniet? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure amet esse dicta odit in praesentium magnam eius sit maxime vero reprehenderit, delectus obcaecati, ullam cumque enim reiciendis? Similique, nulla inventore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas earum iste voluptas consectetur, pariatur ut, aliquam at, porro qui natus fuga omnis amet esse vitae. Soluta ea nisi dolorem quis?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus placeat animi sed earum alias vero? Aliquam iure, a maxime voluptates, voluptatem ratione pariatur adipisci quisquam quam nisi eaque magni doloremque!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum consectetur assumenda illo placeat, iusto consequatur repellendus sint similique nisi autem, accusamus facere cumque, quasi beatae harum mollitia suscipit fuga cupiditate?</p>
+    <h2>Subtítulo de exercíco</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quaerat ipsam sapiente animi illo impedit maxime ullam eveniet veritatis minus, molestiae laborum. Voluptates rerum itaque mollitia, voluptatum magni eaque iure!</p>
+</body>
+</html>
