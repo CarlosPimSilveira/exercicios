@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to top, rgb(65, 64, 64), rgb(114, 114, 114), rgb(192, 191, 191));
+}
+
+main{
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    font: normal 1.5em Arial, Helvetica, sans-serif;
+}
+
+#Principal{
+    font-size: 2em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.719);
+    border-radius: 5px;
+}
+
+.titulo{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+.basico{
+    color: rgb(64, 212, 64);
+}
+
+.intermediario{
+    color: rgb(224, 224, 49);
+}
+
+.avancado{
+    color: rgb(241, 55, 55);
+}
+
+p{
+    text-indent: 2.5em;
+    text-align: justify;
+}
+
+div{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+.menu > ul, a {
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: gray;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
