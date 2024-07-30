@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* 
+Azul (#4A90E2)
+Cinza (#7B8D8E)
+Verde (#A5D6A7)
+
+tpcorpo = titulo principal corpo
+stcorpo = subtitulo corpo
+*/
+
+body{
+    background-color: #7B8D8E;
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+}
+
+header{
+    background-color: #4A90E2;
+    color: white;
+}
+
+.menu{
+    text-align: center;
+}
+
+ul, li{
+    text-decoration: none;
+    display: inline;
+    padding: 5px;
+}
+
+a:hover{
+    background-color: #277fe4;
+}
+
+main{
+    width: 1000px;
+    margin: auto;
+    background-color: floralwhite;
+    padding: 10px;
+    border-radius: 5px 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.685);
+    text-align: justify;
+}
+
+.tpcorpo{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+}
+
+.stcorpo{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    background-color: #4a91e27e;
+}
