@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a::after {
+            content: "";
+            display: block;
+            width: 0px;
+            height: 3px;
+            background: #5edfff;
+            transition: .5s ease-in-out;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        .spinner {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 20px solid rgb(92, 92, 92);
+            border-top-color: #09d ;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <a href="#">Hover me</a>
+
+    <br>
+
+    <div class="spinner"></div>
 </body>
 </html>
