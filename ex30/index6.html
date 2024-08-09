@@ -7,16 +7,31 @@
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+            /*deixa o fundo parado e so o conteudo anda*/
+
+            /*Shorthand - background*/
+            /*color > image > position > repeat > [size] > attachment*/
+
+            background: black url('wallpaper002.jpg') center center no-repeat /*cover*/ fixed;
+            background-size: cover;
+            /*Segundo a w3c a shorthand funcionaria dessa forma porem o size nao funciona*/
+            /*Porem usando um background diferente do recomendado funciona*/
+            /*
+            background: #000 url('wallpaper002.jpg') center top/cover no-repeat fixed;
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
