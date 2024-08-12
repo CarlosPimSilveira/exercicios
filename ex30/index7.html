@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paralax</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .parallax {
+            background-image: url('wallpaper002.jpg');
+            min-height: 400px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content {
+            height: 500px;
+            background-color: aliceblue;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <main class="content">
+        <h1>Efeito de parallax</h1>
+        <p>Role para baixo para ver o efeito de parallax</p>
+    </main>
+    <div class="parallax"></div>
+</body>
+</html>
