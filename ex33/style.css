@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#card{
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+
+.face {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+#front {
+    background-color: rgb(0, 135, 212);
+    transform: rotateY(180deg);
+}
+
+#back {
+    background-color: rgb(0, 80, 126);
+}
+
+.flip {
+    transform: rotateY(180deg);    
+}

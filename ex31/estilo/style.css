@@ -60,7 +60,7 @@ nav > a:hover {
 }
 
 main {
-    background-color: white;
+    background-color: var(--cor1);
     max-width: 950px;
     margin: auto;
     padding: 15px;
@@ -68,7 +68,8 @@ main {
     font-size: 1.1em;
 }
 
-.livro {
+.livro1 {
+    background-color: white;
     display: flex;
     align-items: flex-start;
     border: solid 1px black;
@@ -83,9 +84,13 @@ main {
     max-width: 150px; 
 }
 
-.livro img:hover {
+.livro1 img:hover {
     /* transform: scale(1.1); */
     transition: transform 0.3s ease;
+}
+
+.conteudo > h1 {
+    background-image: linear-gradient(to right, red, transparent);
 }
 
 .conteudo h1 {
