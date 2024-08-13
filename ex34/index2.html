@@ -15,6 +15,13 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td,
         th {
             border: 1px solid black;
@@ -38,6 +45,7 @@
     <!--
     Anatomia para tabelas grandes
     table
+        Caption - "legenda"
         thead
             tr, td, th
         tbody
@@ -48,11 +56,14 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
+            <caption>
+                População das Unidades Federativas 
+            </caption>
             <tr>
                 <td>São Paulo</td>
                 <td class="num">44.411.238</td>
@@ -164,7 +175,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
