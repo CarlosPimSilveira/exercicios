@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /* para deixar cabeçalho fixo da tabela */
         }
 
         caption {
@@ -32,6 +33,21 @@
         tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;         /* colavel */
+            top: 0;                   /* Para colar no top 0 */
+            background-color: gray; /* Para levar o backgroud */
+
+        }
+
+        tbody > tr:nth-child(2n) { 
+            /* odd para numeros impares na tabela */
+            /* even para numeros pares */
+            /* podemos fazer 2n-1 que daria o mesmo efeito que impares*/
+            /* efeito zebrado o 2n é uma sim outra não coluna */
+            background-color: lightgray;   
         }
 
         .num{
@@ -180,6 +196,48 @@
             </tr>
         </tfoot>
     </table>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores ex porro sint dolores placeat odit, laudantium repellat sit nihil, quibusdam voluptatum itaque deserunt iure, blanditiis mollitia quos ullam cum.
+        Natus magnam quibusdam ipsum aliquid recusandae praesentium adipisci consectetur delectus facere. Minus tempore veniam laborum et officiis delectus voluptatem doloribus corrupti eum. Iusto quasi non ab, harum vel pariatur corrupti.
+        Laborum enim hic iste facere quas numquam repudiandae repellendus fugit, sint, quae voluptas incidunt maiores id laudantium modi, debitis asperiores tenetur quod accusamus nemo voluptate sunt ducimus. Suscipit, perferendis est?
+        Temporibus dolores quisquam dicta. Ea excepturi rem quis, suscipit doloremque non aspernatur laboriosam officia dignissimos, debitis voluptatibus commodi odit dolorem modi laudantium voluptates eum laborum sequi. Soluta deleniti recusandae facilis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores ex porro sint dolores placeat odit, laudantium repellat sit nihil, quibusdam voluptatum itaque deserunt iure, blanditiis mollitia quos ullam cum.
+        Natus magnam quibusdam ipsum aliquid recusandae praesentium adipisci consectetur delectus facere. Minus tempore veniam laborum et officiis delectus voluptatem doloribus corrupti eum. Iusto quasi non ab, harum vel pariatur corrupti.
+        Laborum enim hic iste facere quas numquam repudiandae repellendus fugit, sint, quae voluptas incidunt maiores id laudantium modi, debitis asperiores tenetur quod accusamus nemo voluptate sunt ducimus. Suscipit, perferendis est?
+        Temporibus dolores quisquam dicta. Ea excepturi rem quis, suscipit doloremque non aspernatur laboriosam officia dignissimos, debitis voluptatibus commodi odit dolorem modi laudantium voluptates eum laborum sequi. Soluta deleniti recusandae facilis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores ex porro sint dolores placeat odit, laudantium repellat sit nihil, quibusdam voluptatum itaque deserunt iure, blanditiis mollitia quos ullam cum.
+        Natus magnam quibusdam ipsum aliquid recusandae praesentium adipisci consectetur delectus facere. Minus tempore veniam laborum et officiis delectus voluptatem doloribus corrupti eum. Iusto quasi non ab, harum vel pariatur corrupti.
+        Laborum enim hic iste facere quas numquam repudiandae repellendus fugit, sint, quae voluptas incidunt maiores id laudantium modi, debitis asperiores tenetur quod accusamus nemo voluptate sunt ducimus. Suscipit, perferendis est?
+        Temporibus dolores quisquam dicta. Ea excepturi rem quis, suscipit doloremque non aspernatur laboriosam officia dignissimos, debitis voluptatibus commodi odit dolorem modi laudantium voluptates eum laborum sequi. Soluta deleniti recusandae facilis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores ex porro sint dolores placeat odit, laudantium repellat sit nihil, quibusdam voluptatum itaque deserunt iure, blanditiis mollitia quos ullam cum.
+        Natus magnam quibusdam ipsum aliquid recusandae praesentium adipisci consectetur delectus facere. Minus tempore veniam laborum et officiis delectus voluptatem doloribus corrupti eum. Iusto quasi non ab, harum vel pariatur corrupti.
+        Laborum enim hic iste facere quas numquam repudiandae repellendus fugit, sint, quae voluptas incidunt maiores id laudantium modi, debitis asperiores tenetur quod accusamus nemo voluptate sunt ducimus. Suscipit, perferendis est?
+        Temporibus dolores quisquam dicta. Ea excepturi rem quis, suscipit doloremque non aspernatur laboriosam officia dignissimos, debitis voluptatibus commodi odit dolorem modi laudantium voluptates eum laborum sequi. Soluta deleniti recusandae facilis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores ex porro sint dolores placeat odit, laudantium repellat sit nihil, quibusdam voluptatum itaque deserunt iure, blanditiis mollitia quos ullam cum.
+        Natus magnam quibusdam ipsum aliquid recusandae praesentium adipisci consectetur delectus facere. Minus tempore veniam laborum et officiis delectus voluptatem doloribus corrupti eum. Iusto quasi non ab, harum vel pariatur corrupti.
+        Laborum enim hic iste facere quas numquam repudiandae repellendus fugit, sint, quae voluptas incidunt maiores id laudantium modi, debitis asperiores tenetur quod accusamus nemo voluptate sunt ducimus. Suscipit, perferendis est?
+        Temporibus dolores quisquam dicta. Ea excepturi rem quis, suscipit doloremque non aspernatur laboriosam officia dignissimos, debitis voluptatibus commodi odit dolorem modi laudantium voluptates eum laborum sequi. Soluta deleniti recusandae facilis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores ex porro sint dolores placeat odit, laudantium repellat sit nihil, quibusdam voluptatum itaque deserunt iure, blanditiis mollitia quos ullam cum.
+        Natus magnam quibusdam ipsum aliquid recusandae praesentium adipisci consectetur delectus facere. Minus tempore veniam laborum et officiis delectus voluptatem doloribus corrupti eum. Iusto quasi non ab, harum vel pariatur corrupti.
+        Laborum enim hic iste facere quas numquam repudiandae repellendus fugit, sint, quae voluptas incidunt maiores id laudantium modi, debitis asperiores tenetur quod accusamus nemo voluptate sunt ducimus. Suscipit, perferendis est?
+        Temporibus dolores quisquam dicta. Ea excepturi rem quis, suscipit doloremque non aspernatur laboriosam officia dignissimos, debitis voluptatibus commodi odit dolorem modi laudantium voluptates eum laborum sequi. Soluta deleniti recusandae facilis.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores ex porro sint dolores placeat odit, laudantium repellat sit nihil, quibusdam voluptatum itaque deserunt iure, blanditiis mollitia quos ullam cum.
+        Natus magnam quibusdam ipsum aliquid recusandae praesentium adipisci consectetur delectus facere. Minus tempore veniam laborum et officiis delectus voluptatem doloribus corrupti eum. Iusto quasi non ab, harum vel pariatur corrupti.
+        Laborum enim hic iste facere quas numquam repudiandae repellendus fugit, sint, quae voluptas incidunt maiores id laudantium modi, debitis asperiores tenetur quod accusamus nemo voluptate sunt ducimus. Suscipit, perferendis est?
+        Temporibus dolores quisquam dicta. Ea excepturi rem quis, suscipit doloremque non aspernatur laboriosam officia dignissimos, debitis voluptatibus commodi odit dolorem modi laudantium voluptates eum laborum sequi. Soluta deleniti recusandae facilis.
+    </p>
 </body>
 
 </html>
