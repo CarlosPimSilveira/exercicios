@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        html,
+        body {
+            display: grid;
+            /* Define o layout da página como um grid, permitindo o alinhamento flexível dos elementos filhos */
+            height: 100%;
+            /* Define a altura de 'html' e 'body' para ocupar 100% da altura da janela */
+            place-items: center;
+            /* Alinha os elementos dentro do grid horizontal e verticalmente ao centro */
+            background: #000;
+            /* Define a cor de fundo da página como preto */
+        }
+
+        .fundo {
+            position: relative;
+            /* Define o elemento como relativo, para que os elementos filhos com 'position: absolute' sejam posicionados em relação a ele */
+            width: 235px;
+            /* Define a largura da div '.fundo' */
+            height: 300px;
+            /* Define a altura da div '.fundo' */
+        }
+
+        .fundo img {
+            position: absolute;
+            /* Posiciona a imagem de maneira absoluta dentro da div '.fundo', ocupando todo o espaço */
+            top: 0;
+            /* Alinha a imagem no topo do container pai */
+            left: 0;
+            /* Alinha a imagem à esquerda do container pai */
+            width: 100%;
+            /* Faz com que a largura da imagem se ajuste à largura do container pai */
+            height: 100%;
+            /* Faz com que a altura da imagem se ajuste à altura do container pai */
+            object-fit: cover;
+            /* Garante que a imagem cubra todo o espaço do container, sem distorção */
+        }
+
+        .fundo img.mulher {
+            /* filter: brightness(2) grayscale(1); */
+            /* (Comentado) Aplica um filtro de brilho e escala de cinza à imagem com a classe 'mulher' */
+        }
+
+        .fundo img.textura {
+            mix-blend-mode: multiply;
+            /* Define o modo de mistura da imagem 'textura' como 'multiply', permitindo que a imagem interaja com o fundo */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fundo">
+        <img src="Mulher.jpg" alt="" class="mulher">
+        <img src="Marmore.jpg" alt="" class="textura">
+    </div>
+</body>
+
+</html>
