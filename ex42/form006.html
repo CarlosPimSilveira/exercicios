@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+            <!-- <input type="color" name="cor" id="icor"> faz vir com cor padrão de preto. -->
+             <!-- no value podemos fazer começar com uma cor -->
+        </p>
+
+        <p>
+            <label for="inivel">Nível de satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="2" >
+            <!-- aqui com min e max é o nivel de satisfação tratando para quando enviar ser uma nota de 1 a 5 -->
+            <!-- o inicio é sempre no meio porem podemos alterar no value -->
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de Perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+            <!-- permite que o usuario envie foto -->
+            <!-- ao usar esse input nao podemos usar o get tem que ser o post -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>    
+</body>
+</html>
