@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* declarações gerais */
+/* dessa forma todas as configurações ficam em uma unica folha as configurações gerais, para retrato e paisagem */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #233EFF;
+    background-size: contain; /* para a imagem ficar inteira com cover a imagem ficava so os olhos no modo retrato */
+    background-repeat: no-repeat; /* para a imagem nao repetir */
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+}
+
+/* declarações retrato */
+@media screen and (orientation: portrait) { /* <link rel="stylesheet" href="estilos/retrato.css" media="screen and (orientation: portrait)"> basicamente a mesma coisa porem usando uma folha de css so que separado por media em vez de uma folha para cada coisa. */
+    body {
+    background-image: url(../imagens/cev-portrait.jpg);
+    background-position: center bottom; /* para garantir a posição e claro configurado de forma individual pois sao configurações diferentes */
+    }    
+}
+
+/* declarações paisagem */
+@media screen and (orientation: landscape) { /*     <link rel="stylesheet" href="estilos/paisagem.css" media="screen and (orientation: landscape)"> basicamente a mesma coisa porem usando uma folha de css so que separado por media em vez de uma folha para cada coisa. */
+    body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom; /* para ficar grudado no canto esquerdo e na parte de baixo */
+    }
+}
