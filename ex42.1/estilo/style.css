@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 110vh; /* Garante que o corpo ocupe toda a altura da janela */
+    background-color: #233EFF;
+    background-image: url(../ImgFundo.jpg);
+    background-size: cover; /* Faz com que a imagem cubra toda a área */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center center; /* Centraliza a imagem horizontal e verticalmente */
+}
+
+h1 {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 5em;
+}
+
+legend {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+fieldset {
+    background-color: white;
+    color: black;
+    width: 90%;
+    max-width: 600px;
+    height: 90%;
+    margin: 20px auto;
+    border: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+p, label, input {
+    padding: 7px;
+}
+
+label, input {
+    width: 97%;
+    border-radius: 5px;
+}
+
+.botoes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    max-width: 300px; /* Define um limite de largura para o contêiner */
+    margin: auto;
+    padding: 5px;
+}
+
+.botoes {
+    padding: 8px 16px; /* Ajusta o padding para botões menores */
+    font-size: 0.9em;  /* Diminui o tamanho da fonte */
+    border: 1px solid #333;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 45%; /* Faz os botões ocuparem menos espaço horizontalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.botoes:hover {
+    background-color: #ddd; /* Efeito de hover para melhorar a aparência */
+}
