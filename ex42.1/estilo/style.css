@@ -20,16 +20,16 @@ body {
 
 h1 {
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    padding: 1px;
+    margin: 1px;
     font-size: 5em;
 }
 
 legend {
     font-size: 1.5em;
     text-align: center;
-    padding: 5px;
-    margin: 5px;
+    padding: 1px;
+    margin: 1px;
 }
 
 fieldset {
@@ -38,7 +38,7 @@ fieldset {
     width: 90%;
     max-width: 600px;
     height: 90%;
-    margin: 20px auto;
+    margin: 5px auto;
     border: 2px solid #333;
     display: flex;
     flex-direction: column;
@@ -58,7 +58,7 @@ label, input {
 .botoes-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 10px;
     max-width: 300px; /* Define um limite de largura para o contêiner */
     margin: auto;
     padding: 5px;
@@ -75,5 +75,5 @@ label, input {
 }
 
 .botoes:hover {
-    background-color: #ddd; /* Efeito de hover para melhorar a aparência */
+    background-color: #ddd;
 }
