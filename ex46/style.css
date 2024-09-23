@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+}
+
+svg {
+    position: absolute;
+    width: 400px;
+}
+
+svg path {
+    /* cor do traço do caminho */
+    stroke: #11ff00;
+    /* largura do traço */
+    stroke-width: 50;
+    /* Extremidades arredondadas */
+    stroke-linecap: round;
+    transform: translate(50px, 50%);
+    animation: anima 2s linear infinite;
+}
+
+@keyframes anima {
+    50% {
+        d: path("m0,25 C160,-50 140,110 300, 25")
+    }
+}
