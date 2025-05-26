@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+div.conteiner {
+    background-color: lightsalmon;
+
+    display: flex;
+
+    flex-flow: row wrap;
+}
+
+div.item {
+    background-color: lightblue;
+    border: 1px solid black;
+
+    text-align: center;
+    padding: 5px;
+
+    flex: auto;
+    /* configurando com row + wrap + flex o site vai realizar quebra por conteudo ou seja se o conteudo nao couber ele realiza a quebra de linha e ajusta o conteudo */
+}
