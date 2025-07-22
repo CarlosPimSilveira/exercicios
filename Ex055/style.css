@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+div.container {
+    display:  grid;
+    grid-template: 100px 100px 100px / auto auto auto;
+    /*grid-auto-rows: 100px; /* adiciona uma nova linha no grid implicito */
+    /*grid-auto-columns: 100px; /* adiciona uma nova coluna no grid implicito */
+    place-items: stretch center;
+    place-content: start end;
+} 
