@@ -6,4 +6,5 @@ div.container {
     /*grid-template-rows: repeat(3, auto);*/
     /*grid-template: repeat(3, auto) / repeat(3, auto);*/
     grid-template-columns: 100px 20% repeat(2, 1fr);
+    /* primeiro o fixo depois 20% da area toda e por fim o espaço que sobrou dividido por 2 */ 
 } 
