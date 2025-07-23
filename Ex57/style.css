@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+div.container {
+    display:  grid;
+    /*grid-template-columns: repeat(3, auto); /* com essa função ele vai repetir o auto 3 vezes */
+    /*grid-template-rows: repeat(3, auto);*/
+    /*grid-template: repeat(3, auto) / repeat(3, auto);*/
+    grid-template-columns: 100px 20% repeat(2, 1fr);
+} 
